@@ -1,0 +1,29 @@
+/* Estilos gerais do corpo da página */
+body {
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 50vh; /* Define a altura total da tela */
+    margin: 0; /* Remove margens padrão */
+    padding: 50;
+    background-color: #19272f; /* Define a cor de fundo */
+    position: relative; /* Permite o posicionamento absoluto da bexiga */
+}
+
+/* Estilos da bexiga */
+.bexiga {
+    width: 100px; /* Define a largura da bexiga */
+    height: 150px; /* Define a altura da bexiga */
+    background-color: rgb(32, 233, 26); /* Define a cor inicial da bexiga */
+    border-radius: 50% 50% 50% 50%; /* Arredonda a parte superior para parecer uma bexiga */
+    position: absolute; /* Permite que a bexiga seja movida livremente */
+    cursor: help; /* Altera o cursor para indicar que pode ser clicado */
+    transition: transform 0.8s, opacity 0.8s ease-out, background-color 0.8s; /* Suaviza a animação ao "estourar" e mudança de cor */
+}
+
+
+ /* Efeito de estouro */
+ .estourar {
+    transform: scale(20); /* Reduz o tamanho para 0, simulando o estouro */
+    opacity: 20; /* Torna a bexiga invisível */
+}
